@@ -14,7 +14,8 @@ def test_get(a, i, d, result):
 
 @pytest.mark.parametrize("a, b, c, result", [([1, 2, 3, 4], 1, 3, [2, 3]),
                                              ([1, 2, 3, 4], 0, 3, [1, 2, 3]),
-                                             ([], 0, 0, [])])
+                                             ([], 0, 0, []),
+                                             ([1, 2, 3], None, 3, [1, 2, 3])])
 def test_slice(a, b, c, result):
     assert arrs.my_slice(a, b, c) == result
 
