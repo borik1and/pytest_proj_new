@@ -1,5 +1,5 @@
-import pytest
 
+import pytesе
 from utils import arrs
 
 
@@ -25,6 +25,7 @@ def test_slice(a, b, c, result):
                                           ([1, 2, 3], 2, [3]), ])
 def test_slice_more(a, b, result):
     assert arrs.my_slice(a, b) == result
+
 
 
 def test_with_error():
